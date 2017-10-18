@@ -1,9 +1,9 @@
-package main
+package majorityvote
 
 import "fmt"
 
 // perform the Boyer-Moore Majority Vote algorithm
-func majorityVote(arr []string) string {
+func MajorityVote(arr []string) string {
     candidate := ""
     count := 0
     // perform the initial algorithm
@@ -29,13 +29,4 @@ func majorityVote(arr []string) string {
     } else {
         return ""
     }
-}
-
-func main() {
-    arr := []string{"a", "b", "c", "a", "a", "b", "d", "a", "a"}
-    fmt.Printf("The majority vote of %s is '%s'.\n", arr, majorityVote(arr))
-
-    arr2 := []string{"a", "b", "c", "a", "a", "b", "d"}
-    fmt.Printf("The majority vote of %s is '%s'.\n ", arr2, majorityVote(arr2))
-
 }
