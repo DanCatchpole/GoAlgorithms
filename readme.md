@@ -2,3 +2,4 @@ This is a repository to store several algorithms I've written in Go. Each algori
 
 # Current list of algorithms
 - Boyer-Moore Majority Vote
+- QuickSort
